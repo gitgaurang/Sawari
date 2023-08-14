@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: var(--theme-color);
+  padding: 20px;
+  color: white;
+}
+
+:root {
+  --theme-color: #007bff;
+}
