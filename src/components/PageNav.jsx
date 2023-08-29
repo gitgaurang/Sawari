@@ -19,13 +19,13 @@ function PageNav() {
             <NavLink to="/publish-a-ride">Publish-a-ride</NavLink>
           </li>
           <li>
-            <NavLink to="/product">Product</NavLink>
+            <NavLink to="/registerform">Registeration</NavLink>
           </li>
           <li>
             <NavLink to="/login" className={styles.ctaLink}>
               <img
                 src="public\Profile pic.png"
-                alt="Background"
+                alt="Profile"
                 className={styles.profileimage}
               />
             </NavLink>

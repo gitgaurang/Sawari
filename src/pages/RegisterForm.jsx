@@ -1,50 +1,24 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import styles from "./RegisterForm.module.css";
+import RegisterFormPage1 from "./RegisterFormPage1.jsx";
+import PageNav from "../components/PageNav";
 function RegisterForm() {
-  const [email, setEmail] = useState("jack@example.com");
-  const [password, setPassword] = useState("qwerty");
-
-  //   const { login, isAuthenticated } = useAuth();
-  const navigate = useNavigate();
-  function handleSubmit(e) {
-    // e.preventDefault();
-    // if (email && password) login(email, password);
-  }
   return (
-    <div>
-      return (
-      <main className={styles.login}>
-        {/* <PageNav /> */}
-
-        <form className={styles.form} onSubmit={handleSubmit}>
-          <div className={styles.row}>
-            <label htmlFor="email">Email address</label>
-            <input
-              type="email"
-              id="email"
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
-            />
-          </div>
-
-          <div className={styles.row}>
-            <label htmlFor="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              onChange={(e) => setPassword(e.target.value)}
-              value={password}
-            />
-          </div>
-
-          <div>
-            <button type="primary">Login</button>
-          </div>
-        </form>
-      </main>
-      );
-    </div>
+    <>
+      <PageNav />
+      <nav className={styles.nav}>
+        <ul>
+          <li>
+            <NavLink to="registerformpage1">page1</NavLink>
+            {/* <RegisterFormPage1 /> */}
+          </li>
+          <li>
+            <NavLink to="registerformpage2">page2</NavLink>
+          </li>
+        </ul>
+      </nav>
+      <Outlet />
+    </>
   );
 }
 
