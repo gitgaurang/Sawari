@@ -59,7 +59,7 @@ function PublishRide({ onSubmit }) {
         <button type="submit">Search</button>
       </form>
       <img
-        src="public\carpoolOpenDoor.png"
+        src="/carpoolOpenDoor.png"
         alt="Background"
         className={styles.backgroundCar}
       />

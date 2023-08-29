@@ -17,7 +17,7 @@ function Main() {
         </span>
       </div>
       <img
-        src="public\carpoolOpenDoor.png"
+        src="/carpoolOpenDoor.png"
         alt="Background"
         className={styles.backgroundCar}
       />
